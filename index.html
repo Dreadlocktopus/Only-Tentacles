@@ -1042,7 +1042,7 @@ function renderFeed() {
             <div class="locked-icon">🔒</div>
             <p style="font-weight:600;margin-bottom:0.5rem">${p.title}</p>
             <p class="locked-text">Ce contenu est réservé aux abonnés</p>
-            <button class="btn btn-pink btn-sm" onclick="goFeed()">Voir les options d'abonnement</button>
+            <button class="btn btn-pink btn-sm" onclick="window.open(buildBmcUrl(), '_blank')">Voir les options d'abonnement</button>
           </div>`
         : `<img class="post-img" src="${src}" alt="${p.title}" onclick="openLightbox('${src}')">`
       }
